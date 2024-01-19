@@ -1,39 +1,38 @@
 # biblify
 
-Aplikacja **biblify** to prosty organizer cytatów biblijnych, który umożliwia użytkownikom przeglądanie, dodawanie i zarządzanie cytatami z Biblii.
+**biblify** is a simple organizer for biblical quotes, allowing users to browse, add, and manage quotes from the Bible.
 
-## Funkcje
+## Features
 
-- **Losowy cytat**: Przeglądaj losowe cytaty biblijne.
-- **Wszystkie cytaty**: Przeglądaj wszystkie zapisane cytaty z Biblii.
-- **Cytat dnia**: Sprawdzaj codziennie wybrany cytat jako "Cytat dnia".
-- **Import cytaty**: Dodawaj nowe cytaty za pomocą funkcji importu.
+- **Random Quote**: Browse random biblical quotes.
+- **All Quotes**: View all saved quotes from the Bible.
+- **Quote of the Day**: Check a daily selected quote as the "Quote of the Day."
+- **Import Quote**: Add new quotes using the import function.
 
-## Instalacja
+## Installation
 
-1. Pobierz repozytorium projektu na swój komputer.
-2. Otwórz projekt w Xcode.
-3. Uruchom aplikację na swoim urządzeniu lub symulatorze.
+1. Clone the project repository to your computer.
+2. Open the project in Xcode.
+3. Run the application on your device or simulator.
 
-## Wymagania
+## Requirements
 
 - Xcode 12.0+
 - Swift 5.0+
 
-## Konfiguracja bazy danych
+## Database Configuration
 
-Aplikacja korzysta z bazy danych do przechowywania cytatów. Baza danych jest zarządzana za pomocą biblioteki SwiftData. W przypadku potrzeby dostosowania konfiguracji bazy danych, należy sprawdzić plik `biblifyApp.swift` oraz `Quote.swift` w katalogu projektu.
+The application uses a database to store quotes, managed by the SwiftData library. If you need to customize the database configuration, check the `biblifyApp.swift` and `Quote.swift` files in the project directory.
 
-## Kontakt
+## Contact
 
-Jeśli masz pytania, uwagi lub sugestie dotyczące aplikacji, skontaktuj się z autorem:
+For questions, comments, or suggestions regarding the application, please contact the author:
 
-- Autor: Michał Talaga
-- Email: [twój@email.com](mailto:twój@email.com)
+- **Author**: Michał Talaga
 
-## Licencja
 
-Ten projekt jest dostępny na licencji [MIT License](LICENSE.md).
 
----
-© 2024 [Twoja Nazwa Projektu]
+[![Swift](https://img.shields.io/badge/Swift-5.0%2B-orange)](https://swift.org/)
+© 2024 BIBLIFY
+
+
