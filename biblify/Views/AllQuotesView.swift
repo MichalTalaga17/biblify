@@ -6,13 +6,35 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct AllQuotesView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    @Environment(\.modelContext) private var modelContext
+    @Query private var items: [Quote]
+    var body: some View {        NavigationSplitView {
+            List {
+                ForEach(items) { item in
+                    NavigationLink(destination: Text(item.text)) {
+                        VStack(alignment: .leading) {
+                            Text(item.book)
+                                .font(.headline)
+                            Text("Chapter \(item.chapter), Verse \(item.verse)")
+                                .foregroundColor(.gray)
+                            Text(item.text)
+                        }
+                    }
+                }
+            }
+            
+        } detail: {
+            Text("Select an item")
+        }
     }
+    
 }
 
 #Preview {
     AllQuotesView()
+        .modelContainer(for: Quote.self, inMemory: true)
 }
+

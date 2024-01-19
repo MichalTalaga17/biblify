@@ -10,52 +10,34 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
-    var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+    @Query private var items: [Quote]
+    
+    var body: some View{
+        TabView {
+            RandomQuoteView()
+                .tabItem {
+                    Label("Losowy cytat", systemImage: "shuffle.circle")
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+            
+            AllQuotesView()
+                .tabItem {
+                        Label("Wszystkie cytaty", systemImage: "quote.bubble")
+                    
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+            QuoteOfDayView()
+                .tabItem {
+                    Label("Cytat dnia", systemImage: "calendar.circle")
                 }
-            }
-        } detail: {
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+            importView()
+                .tabItem {
+                        Label("import cytaty", systemImage: "quote.bubble")
+                    
+                }
         }
     }
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: Quote.self, inMemory: true)
 }

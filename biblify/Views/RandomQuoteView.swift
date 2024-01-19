@@ -6,13 +6,17 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct RandomQuoteView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Query private var items: [Quote]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Random")
     }
 }
 
 #Preview {
     RandomQuoteView()
+        .modelContainer(for: Quote.self, inMemory: true)
 }

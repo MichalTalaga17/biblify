@@ -9,18 +9,26 @@
 /* Begin PBXBuildFile section */
 		47FF90742B5B167200C6FD8E /* biblifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF90732B5B167200C6FD8E /* biblifyApp.swift */; };
 		47FF90762B5B167200C6FD8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF90752B5B167200C6FD8E /* ContentView.swift */; };
-		47FF90782B5B167200C6FD8E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF90772B5B167200C6FD8E /* Item.swift */; };
+		47FF90782B5B167200C6FD8E /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF90772B5B167200C6FD8E /* Quote.swift */; };
 		47FF907A2B5B167400C6FD8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FF90792B5B167400C6FD8E /* Assets.xcassets */; };
 		47FF907D2B5B167400C6FD8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FF907C2B5B167400C6FD8E /* Preview Assets.xcassets */; };
+		47FF90862B5B1C5D00C6FD8E /* AllQuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF90852B5B1C5D00C6FD8E /* AllQuotesView.swift */; };
+		47FF908B2B5B2B1100C6FD8E /* importView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF908A2B5B2B1100C6FD8E /* importView.swift */; };
+		47FF908D2B5B2D8D00C6FD8E /* RandomQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF908C2B5B2D8D00C6FD8E /* RandomQuoteView.swift */; };
+		47FF908F2B5B2DF600C6FD8E /* QuoteOfDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF908E2B5B2DF600C6FD8E /* QuoteOfDayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47FF90702B5B167200C6FD8E /* biblify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = biblify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FF90732B5B167200C6FD8E /* biblifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biblifyApp.swift; sourceTree = "<group>"; };
 		47FF90752B5B167200C6FD8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		47FF90772B5B167200C6FD8E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		47FF90772B5B167200C6FD8E /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		47FF90792B5B167400C6FD8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47FF907C2B5B167400C6FD8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47FF90852B5B1C5D00C6FD8E /* AllQuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuotesView.swift; sourceTree = "<group>"; };
+		47FF908A2B5B2B1100C6FD8E /* importView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = importView.swift; sourceTree = "<group>"; };
+		47FF908C2B5B2D8D00C6FD8E /* RandomQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteView.swift; sourceTree = "<group>"; };
+		47FF908E2B5B2DF600C6FD8E /* QuoteOfDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteOfDayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				47FF90732B5B167200C6FD8E /* biblifyApp.swift */,
-				47FF90752B5B167200C6FD8E /* ContentView.swift */,
-				47FF90772B5B167200C6FD8E /* Item.swift */,
+				47FF90842B5B185300C6FD8E /* Models */,
+				47FF90832B5B183900C6FD8E /* Views */,
 				47FF90792B5B167400C6FD8E /* Assets.xcassets */,
 				47FF907B2B5B167400C6FD8E /* Preview Content */,
 			);
@@ -68,6 +76,26 @@
 				47FF907C2B5B167400C6FD8E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47FF90832B5B183900C6FD8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47FF90752B5B167200C6FD8E /* ContentView.swift */,
+				47FF90852B5B1C5D00C6FD8E /* AllQuotesView.swift */,
+				47FF908A2B5B2B1100C6FD8E /* importView.swift */,
+				47FF908C2B5B2D8D00C6FD8E /* RandomQuoteView.swift */,
+				47FF908E2B5B2DF600C6FD8E /* QuoteOfDayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		47FF90842B5B185300C6FD8E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47FF90772B5B167200C6FD8E /* Quote.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47FF908D2B5B2D8D00C6FD8E /* RandomQuoteView.swift in Sources */,
+				47FF908F2B5B2DF600C6FD8E /* QuoteOfDayView.swift in Sources */,
 				47FF90762B5B167200C6FD8E /* ContentView.swift in Sources */,
-				47FF90782B5B167200C6FD8E /* Item.swift in Sources */,
+				47FF90782B5B167200C6FD8E /* Quote.swift in Sources */,
 				47FF90742B5B167200C6FD8E /* biblifyApp.swift in Sources */,
+				47FF90862B5B1C5D00C6FD8E /* AllQuotesView.swift in Sources */,
+				47FF908B2B5B2B1100C6FD8E /* importView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,15 +305,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"biblify/Preview Content\"";
 				DEVELOPMENT_TEAM = 4Z2HM3SS2M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -291,6 +327,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.michaltalaga.biblify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,15 +341,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"biblify/Preview Content\"";
 				DEVELOPMENT_TEAM = 4Z2HM3SS2M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,6 +363,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.michaltalaga.biblify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -12,7 +12,7 @@ import SwiftData
 struct biblifyApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Quote.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -21,6 +21,7 @@ struct biblifyApp: App {
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
+        
     }()
 
     var body: some Scene {

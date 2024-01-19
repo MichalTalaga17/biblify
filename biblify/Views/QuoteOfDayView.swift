@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct QuoteOfDayView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Query private var items: [Quote]
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -15,4 +18,5 @@ struct QuoteOfDayView: View {
 
 #Preview {
     QuoteOfDayView()
+        .modelContainer(for: Quote.self, inMemory: true)
 }
