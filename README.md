@@ -15,6 +15,7 @@
 2. Open the project in Xcode.
 3. Run the application on your device or simulator.
 
+
 ## Requirements
 
 - Xcode 12.0+
