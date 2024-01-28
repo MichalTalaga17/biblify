@@ -28,9 +28,9 @@ struct ContentView: View {
                 .tabItem {
                     Label("Cytat dnia", systemImage: "calendar.circle")
                 }
-            importView()
+            SettingsView()
                 .tabItem {
-                        Label("import cytaty", systemImage: "quote.bubble")
+                        Label("Ustawienia", systemImage: "gear")
                     
                 }
         }

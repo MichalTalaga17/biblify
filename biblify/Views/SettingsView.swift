@@ -6,10 +6,32 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct SettingsView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Query private var items: [Quote]
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button("Import"){
+                let newQuote = Quote(text: "cytat1", book: "book", chapter: 2, verse: "1-2")
+                modelContext.insert(newQuote)
+            }
+            Button("Register"){
+                
+            }
+        }
+        .buttonStyle(.bordered)
+        .controlSize(.extraLarge)
+        
+
+        
+        
+            
+            
+            
+        
     }
 }
 
