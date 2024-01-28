@@ -1,3 +1,4 @@
+[![Swift](https://img.shields.io/badge/Swift-5.0%2B-orange)](https://swift.org/)
 # biblify
 
 **biblify** is a simple organizer for biblical quotes, allowing users to browse, add, and manage quotes from the Bible.
@@ -33,7 +34,7 @@ For questions, comments, or suggestions regarding the application, please contac
 
 
 
-[![Swift](https://img.shields.io/badge/Swift-5.0%2B-orange)](https://swift.org/)
+
 © 2024 BIBLIFY
 
 
