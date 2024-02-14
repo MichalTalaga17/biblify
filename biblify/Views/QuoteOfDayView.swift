@@ -8,15 +8,45 @@
 import SwiftUI
 import SwiftData
 
+
+// Example usage in your SwiftUI app
 struct QuoteOfDayView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Quote]
+    @State private var dailyQuote: Quote?
+    private var modelContainer: ModelContainer
+
+    init(modelContainer: ModelContainer) {
+        self.modelContainer = modelContainer
+    }
+
     var body: some View {
-        Text("Hello, World")
+        VStack {
+            if let quote = dailyQuote {
+                // Display the quote
+            } else {
+                // Display a loading message or handle no quote case
+            }
+        }
+        .onAppear(perform: loadDailyQuote)
+    }
+
+    private func loadDailyQuote() {
+        do {
+            guard let quote = try modelContainer.fetchRandomQuote() else {
+                // Handle error or no quote available
+                return
+            }
+
+            dailyQuote = quote
+        } catch {
+            print("Error loading daily quote: \(error)")
+        }
     }
 }
 
-#Preview {
-    QuoteOfDayView()
-        .modelContainer(for: Quote.self, inMemory: true)
+struct DailyQuoteView_Previews: PreviewProvider {
+    static var previews: some View {
+        // Create a mock ModelContainer for preview
+        let mockModelContainer = try! ModelContainer(for: Schema([Quote.self]), configurations: [])
+        return QuoteOfDayView(modelContainer: mockModelContainer)
+    }
 }
