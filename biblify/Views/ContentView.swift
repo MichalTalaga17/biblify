@@ -24,10 +24,10 @@ struct ContentView: View {
                         Label("Wszystkie cytaty", systemImage: "quote.bubble")
                     
                 }
-            QuoteOfDayView()
-                .tabItem {
-                    Label("Cytat dnia", systemImage: "calendar.circle")
-                }
+//            QuoteOfDayView()
+//                .tabItem {
+//                    Label("Cytat dnia", systemImage: "calendar.circle")
+//                }
             SettingsView()
                 .tabItem {
                         Label("Ustawienia", systemImage: "gear")

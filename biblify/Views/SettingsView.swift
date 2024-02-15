@@ -15,9 +15,14 @@ struct SettingsView: View {
     var body: some View {
         VStack {
             Button("Import"){
-                let newQuote = Quote(text: "cytat1", book: "book", chapter: 2, verse: "1-2")
-                modelContext.insert(newQuote)
-            }
+                            // Wczytaj cytaty z tablicy Quotes
+                            let quotes = Quotes
+
+                            // Dodaj cytaty do bazy danych
+                            for quote in quotes {
+                                modelContext.insert(quote)
+                            }
+                        }
             Button("Register"){
                 
             }
