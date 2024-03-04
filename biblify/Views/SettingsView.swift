@@ -16,15 +16,16 @@ struct SettingsView: View {
         VStack {
             Button("Import"){
                             // Wczytaj cytaty z tablicy Quotes
-                            let quotes = Quotes
+                            let quotes = NonReligiousQuotes
 
                             // Dodaj cytaty do bazy danych
                             for quote in quotes {
                                 modelContext.insert(quote)
                             }
                         }
+            
             Button("Register"){
-                
+                    
             }
         }
         .buttonStyle(.bordered)

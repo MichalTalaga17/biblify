@@ -131,3 +131,26 @@ let Quotes: [Quote] = [
     Quote(text: "Wszystko, co uczyniliście jednemu z tych braci moich najmniejszych, Mnieście uczynili.", book: "Ewangelia Mateusza", chapter: 25, verse: "40")
     // Dodaj pozostałe cytaty z Pisma Świętego według tego wzoru
 ]
+
+let NonReligiousQuotes: [Quote] = [
+    Quote(text: "Nigdy nie jest za późno, by być tym, kim chciałeś być.", book: "George Eliot", chapter: 1, verse: ""),
+    Quote(text: "Człowiek jest wielki nie przez to, co posiada, lecz przez to, kim jest; nie przez to, co ma, ale przez to, czym dzieli się z innymi.", book: "Jan Paweł II", chapter: 1, verse: ""),
+    Quote(text: "Sukces to nie klucz do szczęścia. Szczęście to klucz do sukcesu. Jeśli kochasz to, co robisz, odniesiesz sukces.", book: "Albert Schweitzer", chapter: 1, verse: ""),
+    Quote(text: "Życie to jedno wielkie przygoda lub wcale.", book: "Helen Keller", chapter: 1, verse: ""),
+    Quote(text: "Bądź zmianą, jaką chcesz widzieć w świecie.", book: "Mahatma Gandhi", chapter: 1, verse: ""),
+    Quote(text: "Prawdziwa miłość nie ma happy endu, ponieważ prawdziwa miłość nie ma końca.", book: "Judy Garland", chapter: 1, verse: ""),
+    Quote(text: "Sztuka jest dla duszy, co ćwiczenia są dla ciała.", book: "W.H. Auden", chapter: 1, verse: ""),
+    Quote(text: "Sukces to nie ostateczna pętla, a porażka to nie koniec drogi. To odwaga do kontynuacji, która się liczy.", book: "Winston Churchill", chapter: 1, verse: ""),
+    Quote(text: "Nie możemy pokonać wszystkich, ale możemy wybrać, czy pozwolimy, by nas pokonało.", book: "Vince Lombardi", chapter: 1, verse: ""),
+    Quote(text: "Twoje życie staje się lepsze tylko wtedy, gdy stajesz się lepszym.", book: "Brian Tracy", chapter: 1, verse: ""),
+    Quote(text: "Szczęście jest wtedy, gdy to, co myślisz, to, co mówisz, i to, co robisz, są w zgodzie.", book: "Mahatma Gandhi", chapter: 1, verse: ""),
+    Quote(text: "Marzenia to nie to, co widzisz podczas snu. To coś, co nie pozwala ci zasnąć.", book: "A.P.J. Abdul Kalam", chapter: 1, verse: ""),
+    Quote(text: "Rób to, co możesz, z tym, co masz, tam, gdzie jesteś.", book: "Theodore Roosevelt", chapter: 1, verse: ""),
+    Quote(text: "Największym zobowiązaniem jest to, czego dokonujemy dla siebie.", book: "Oscar Wilde", chapter: 1, verse: ""),
+    Quote(text: "Twoje życie nie poprawi się, dopóki nie zaczniesz codziennie robić czegoś, co kochasz.", book: "Zig Ziglar", chapter: 1, verse: ""),
+    Quote(text: "Szczęście nie polega na tym, aby posiadać to, czego się pragnie, ale na tym, aby pragnąć tego, co się posiada.", book: "St. Augustine", chapter: 1, verse: ""),
+    Quote(text: "Sukces to umiejętność iść od jednego niepowodzenia do drugiego, nie tracąc entuzjazmu.", book: "Winston Churchill", chapter: 1, verse: ""),
+    Quote(text: "Prawdziwa edukacja nie polega na nauce wielu faktów, ale na rozbudzeniu ciekawości.", book: "Anatole France", chapter: 1, verse: ""),
+    Quote(text: "Życie to to, co się z nami dzieje, gdy jesteśmy zajęci planowaniem innych rzeczy.", book: "John Lennon", chapter: 1, verse: ""),
+    Quote(text: "Dwa najważniejsze dni w twoim życiu to ten, w którym się urodziłeś, i ten, w którym dowiedziałeś się, dlaczego.", book: "Mark Twain", chapter: 1, verse: ""),
+]

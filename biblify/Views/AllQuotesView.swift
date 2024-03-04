@@ -15,12 +15,14 @@ struct AllQuotesView: View {
     var body: some View {        NavigationSplitView {
             List {
                 ForEach(items) { item in
-                    NavigationLink(destination: Text(item.text)) {
+                    NavigationLink(destination: Text(item.text).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).padding()) {
                         VStack(alignment: .leading) {
                             Text(item.text)
                                 .font(.headline)
-                            Text("\(item.book)  \(item.chapter),  \(item.verse)")
+                            Text("\(item.book)")
                                 .foregroundColor(.gray)
+//                            Text("\(item.book)  \(item.chapter),  \(item.verse)")
+//                                .foregroundColor(.gray)
                         }
                     }
                 }
