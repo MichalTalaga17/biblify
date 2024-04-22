@@ -16,10 +16,21 @@ struct RandomQuoteView: View {
     var body: some View {
         VStack {
                     Spacer()
-                    Text(currentQuote?.text ?? "Brak cytatu")
-                        .padding()
-                        .multilineTextAlignment(.center)
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    
+            if let quote = currentQuote {
+                Text(currentQuote?.text ?? "Brak cytatu")
+                    .padding()
+                    .multilineTextAlignment(.center)
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                            Text("\(quote.book) \(quote.chapter), \(quote.verse)")
+                    .font(.footnote)
+                                .padding()
+                        } else {
+                            Text("Brak cytatu")
+                                .font(.title)
+                                .padding()
+                        }
+            
                     Spacer()
                     Button(action: {
                         self.randomizeQuote()

@@ -1,10 +1,3 @@
-//
-//  SettingsView.swift
-//  biblify
-//
-//  Created by Michał Talaga on 20/01/2024.
-//
-
 import SwiftUI
 import SwiftData
 
@@ -14,33 +7,45 @@ struct SettingsView: View {
 
     var body: some View {
         VStack {
-            Button("Import"){
-                            // Wczytaj cytaty z tablicy Quotes
-                            let quotes = NonReligiousQuotes
+            Button("Import religious") {
+                // Wczytaj cytaty z tablicy Quotes
+                let quotes = Quotes
 
-                            // Dodaj cytaty do bazy danych
-                            for quote in quotes {
-                                modelContext.insert(quote)
-                            }
-                        }
+                // Dodaj cytaty do bazy danych
+                for quote in quotes {
+                    modelContext.insert(quote)
+                }
+
+                // Zapisz zmiany
+                do {
+                    try modelContext.save()
+                } catch {
+                    print("Błąd podczas zapisywania danych: \(error)")
+                }
+            }
             
-            Button("Register"){
-                    
+            Button("Import non-religious") {
+                // Wczytaj cytaty z tablicy NonReligiousQuotes
+                let quotes = NonReligiousQuotes
+
+                // Dodaj cytaty do bazy danych
+                for quote in quotes {
+                    modelContext.insert(quote)
+                }
+
+                // Zapisz zmiany
+                do {
+                    try modelContext.save()
+                } catch {
+                    print("Błąd podczas zapisywania danych: \(error)")
+                }
+            }
+            
+            Button("Register") {
+                // Kod rejestracji użytkownika
             }
         }
         .buttonStyle(.bordered)
         .controlSize(.extraLarge)
-        
-
-        
-        
-            
-            
-            
-        
     }
-}
-
-#Preview {
-    SettingsView()
 }
